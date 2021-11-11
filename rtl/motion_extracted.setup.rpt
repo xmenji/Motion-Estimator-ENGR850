@@ -1,0 +1,1746 @@
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'ideal_clock1' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'ideal_clock1' will be added to the clock's propagated skew. (TIM-112)
+Information: Using CCS timing info. (TIM-025)
+Warning: Extrapolations far outside the librarycharacterization range have been detected 554 times during delay calculation. (RCCALC-014)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : topmodule
+Version: I-2013.12-ICC-SP3
+Date   : Tue Dec 20 17:26:30 2016
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ff1p16v125c   Library: saed32hvt_ff1p16v125c
+
+Information: Percent of Arnoldi-based delays = 10.94%
+
+Information: Percent of CCS-based delays =  7.52%
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[98]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U14/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[98]/D (DFFX1_HVT)             0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.89
+  comparator1/tempPEout_reg[98]/CLK (DFFX1_HVT)           0.00       3.89 r
+  library setup time                                     -0.02       3.87
+  data required time                                                 3.87
+  --------------------------------------------------------------------------
+  data required time                                                 3.87
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[34]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U6/Y (AO22X1_HVT)                           0.05 &     2.39 r
+  comparator1/tempPEout_reg[34]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[34]/CLK (DFFX1_HVT)           0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[39]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U11/Y (AO22X1_HVT)                          0.05 &     2.39 r
+  comparator1/tempPEout_reg[39]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[39]/CLK (DFFX1_HVT)           0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[120]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U36/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[120]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[120]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[103]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U19/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[103]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[103]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[100]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U16/Y (AO22X1_HVT)                          0.05 &     2.39 r
+  comparator1/tempPEout_reg[100]/D (DFFX1_HVT)            0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[100]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[101]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U17/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[101]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[101]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.49
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[99]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U15/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[99]/D (DFFX1_HVT)             0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[99]/CLK (DFFX1_HVT)           0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[109]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U25/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[109]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[109]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[105]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U21/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[105]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[105]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[96]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U53/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[96]/D (DFFX1_HVT)             0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[96]/CLK (DFFX1_HVT)           0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[60]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U211/Y (AO22X1_HVT)                         0.05 &     2.39 r
+  comparator1/tempPEout_reg[60]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.06       3.91
+  comparator1/tempPEout_reg[60]/CLK (DFFX1_HVT)           0.00       3.91 r
+  library setup time                                     -0.02       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[113]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U29/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[113]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[113]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[110]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U26/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[110]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[110]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[63]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U216/Y (AO22X1_HVT)                         0.05 &     2.39 r
+  comparator1/tempPEout_reg[63]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.06       3.91
+  comparator1/tempPEout_reg[63]/CLK (DFFX1_HVT)           0.00       3.91 r
+  library setup time                                     -0.02       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[61]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U214/Y (AO22X1_HVT)                         0.05 &     2.39 r
+  comparator1/tempPEout_reg[61]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.06       3.91
+  comparator1/tempPEout_reg[61]/CLK (DFFX1_HVT)           0.00       3.91 r
+  library setup time                                     -0.02       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[35]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U7/Y (AO22X1_HVT)                           0.05 &     2.39 r
+  comparator1/tempPEout_reg[35]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.06       3.91
+  comparator1/tempPEout_reg[35]/CLK (DFFX1_HVT)           0.00       3.91 r
+  library setup time                                     -0.02       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[112]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U126/Y (NBUFFX2_HVT)                        0.07 c     2.26 f
+  comparator1/U127/Y (INVX1_HVT)                          0.08 c     2.33 r
+  comparator1/U28/Y (AO22X1_HVT)                          0.05 &     2.38 r
+  comparator1/tempPEout_reg[112]/D (DFFX1_HVT)            0.00 &     2.38 r
+  data arrival time                                                  2.38
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.05       3.90
+  comparator1/tempPEout_reg[112]/CLK (DFFX1_HVT)          0.00       3.90 r
+  library setup time                                     -0.02       3.88
+  data required time                                                 3.88
+  --------------------------------------------------------------------------
+  data required time                                                 3.88
+  data arrival time                                                 -2.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[62]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U215/Y (AO22X1_HVT)                         0.05 &     2.39 r
+  comparator1/tempPEout_reg[62]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.06       3.91
+  comparator1/tempPEout_reg[62]/CLK (DFFX1_HVT)           0.00       3.91 r
+  library setup time                                     -0.02       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+  Startpoint: c/count_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comparator1/tempPEout_reg[36]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  c/count_reg[5]/CLK (DFFX1_HVT)                          0.00       0.06 r
+  c/count_reg[5]/Q (DFFX1_HVT)                            0.11       0.17 f
+  c/rem_53_I16/a[5] (control_DW_div_uns_0)                0.00       0.17 f
+  c/rem_53_I16/U16/Y (AND2X1_HVT)                         0.04 &     0.20 f
+  c/rem_53_I16/U28/Y (AND2X1_HVT)                         0.03 &     0.23 f
+  c/rem_53_I16/U40/Y (AND2X1_HVT)                         0.03 &     0.26 f
+  c/rem_53_I16/U52/Y (AND2X1_HVT)                         0.03 &     0.29 f
+  c/rem_53_I16/U64/Y (AND2X1_HVT)                         0.03 &     0.32 f
+  c/rem_53_I16/U76/Y (AND2X1_HVT)                         0.03 &     0.36 f
+  c/rem_53_I16/U84/Y (AND2X1_HVT)                         0.06 &     0.42 f
+  c/rem_53_I16/U118/Y (XOR2X1_HVT)                        0.06 &     0.48 f
+  c/rem_53_I16/U14/Y (AND2X1_HVT)                         0.03 &     0.51 f
+  c/rem_53_I16/U26/Y (AND2X1_HVT)                         0.03 &     0.54 f
+  c/rem_53_I16/U38/Y (AND2X1_HVT)                         0.03 &     0.57 f
+  c/rem_53_I16/U50/Y (AND2X1_HVT)                         0.03 &     0.59 f
+  c/rem_53_I16/U62/Y (AND2X1_HVT)                         0.03 &     0.62 f
+  c/rem_53_I16/U74/Y (AND2X1_HVT)                         0.03 &     0.65 f
+  c/rem_53_I16/U82/Y (AND2X1_HVT)                         0.02 &     0.67 f
+  c/rem_53_I16/U5/Y (OR2X1_HVT)                           0.06 &     0.73 f
+  c/rem_53_I16/U123/Y (XOR2X1_HVT)                        0.06 &     0.79 f
+  c/rem_53_I16/U12/Y (AND2X1_HVT)                         0.03 &     0.83 f
+  c/rem_53_I16/U24/Y (AND2X1_HVT)                         0.03 &     0.86 f
+  c/rem_53_I16/U36/Y (AND2X1_HVT)                         0.03 &     0.89 f
+  c/rem_53_I16/U48/Y (AND2X1_HVT)                         0.03 &     0.91 f
+  c/rem_53_I16/U60/Y (AND2X1_HVT)                         0.03 &     0.94 f
+  c/rem_53_I16/U72/Y (AND2X1_HVT)                         0.03 &     0.97 f
+  c/rem_53_I16/U1/Y (AO21X1_HVT)                          0.06 &     1.03 f
+  c/rem_53_I16/U127/Y (XOR2X1_HVT)                        0.06 &     1.09 f
+  c/rem_53_I16/U10/Y (AND2X1_HVT)                         0.04 &     1.13 f
+  c/rem_53_I16/U22/Y (AND2X1_HVT)                         0.03 &     1.16 f
+  c/rem_53_I16/U34/Y (AND2X1_HVT)                         0.03 &     1.19 f
+  c/rem_53_I16/U46/Y (AND2X1_HVT)                         0.03 &     1.22 f
+  c/rem_53_I16/U58/Y (AND2X1_HVT)                         0.03 &     1.25 f
+  c/rem_53_I16/U70/Y (AND2X1_HVT)                         0.03 &     1.27 f
+  c/rem_53_I16/U2/Y (AO21X1_HVT)                          0.06 &     1.34 f
+  c/rem_53_I16/U130/Y (XOR2X1_HVT)                        0.06 &     1.40 f
+  c/rem_53_I16/U8/Y (AND2X1_HVT)                          0.04 &     1.43 f
+  c/rem_53_I16/U20/Y (AND2X1_HVT)                         0.03 &     1.47 f
+  c/rem_53_I16/U32/Y (AND2X1_HVT)                         0.03 &     1.50 f
+  c/rem_53_I16/U44/Y (AND2X1_HVT)                         0.03 &     1.52 f
+  c/rem_53_I16/U56/Y (AND2X1_HVT)                         0.03 &     1.55 f
+  c/rem_53_I16/U68/Y (AND2X1_HVT)                         0.03 &     1.58 f
+  c/rem_53_I16/U3/Y (AO21X1_HVT)                          0.07 &     1.65 f
+  c/rem_53_I16/U132/Y (XOR2X1_HVT)                        0.06 &     1.71 f
+  c/rem_53_I16/U6/Y (AND2X1_HVT)                          0.04 &     1.75 f
+  c/rem_53_I16/U18/Y (AND2X1_HVT)                         0.03 &     1.78 f
+  c/rem_53_I16/U30/Y (AND2X1_HVT)                         0.03 &     1.81 f
+  c/rem_53_I16/U42/Y (AND2X1_HVT)                         0.03 &     1.84 f
+  c/rem_53_I16/U54/Y (AND2X1_HVT)                         0.03 &     1.87 f
+  c/rem_53_I16/U66/Y (AND2X1_HVT)                         0.03 &     1.90 f
+  c/rem_53_I16/U4/Y (AO21X1_HVT)                          0.07 &     1.97 f
+  c/rem_53_I16/U101/Y (MUX21X1_HVT)                       0.04 &     2.01 r
+  c/rem_53_I16/remainder[7] (control_DW_div_uns_0)        0.00       2.01 r
+  c/U5/Y (NOR4X1_HVT)                                     0.06 &     2.07 f
+  c/U63/Y (AND2X1_HVT)                                    0.11 c     2.18 f
+  c/pflag (control)                                       0.00       2.18 f
+  comparator1/pflag (Comparator)                          0.00       2.18 f
+  comparator1/U133/Y (NBUFFX2_HVT)                        0.08 c     2.26 f
+  comparator1/U136/Y (INVX1_HVT)                          0.08 c     2.34 r
+  comparator1/U8/Y (AO22X1_HVT)                           0.05 &     2.39 r
+  comparator1/tempPEout_reg[36]/D (DFFX1_HVT)             0.00 &     2.39 r
+  data arrival time                                                  2.39
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.06       3.91
+  comparator1/tempPEout_reg[36]/CLK (DFFX1_HVT)           0.00       3.91 r
+  library setup time                                     -0.02       3.89
+  data required time                                                 3.89
+  --------------------------------------------------------------------------
+  data required time                                                 3.89
+  data arrival time                                                 -2.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.50
+
+
+1

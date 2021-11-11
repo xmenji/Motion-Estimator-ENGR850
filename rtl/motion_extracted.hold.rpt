@@ -1,0 +1,636 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : topmodule
+Version: I-2013.12-ICC-SP3
+Date   : Tue Dec 20 17:26:49 2016
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ff1p16v125c   Library: saed32hvt_ff1p16v125c
+
+Information: Percent of Arnoldi-based delays = 10.94%
+
+Information: Percent of CCS-based delays =  7.52%
+
+  Startpoint: R[0] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[0] (in)                                0.00 @     0.00 r
+  U12/Y (DELLN1X2_HVT)                     0.09 @     0.09 r
+  pe0/R[0] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[0]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.08       0.08
+  pe0/Rpipe_reg[0]/CLK (DFFX1_HVT)         0.00       0.08 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: R[1] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[1]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[1] (in)                                0.00 @     0.00 r
+  U11/Y (DELLN1X2_HVT)                     0.09 @     0.09 r
+  pe0/R[1] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[1]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[1]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: R[2] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[2] (in)                                0.00 @     0.00 r
+  U10/Y (DELLN1X2_HVT)                     0.09 @     0.09 r
+  pe0/R[2] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[2]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[2]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: R[5] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[5] (in)                                0.00 @     0.00 r
+  U3/Y (DELLN1X2_HVT)                      0.09 @     0.09 r
+  pe0/R[5] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[5]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[5]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: R[3] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[3]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[3] (in)                                0.00 @     0.00 r
+  U9/Y (DELLN1X2_HVT)                      0.09 @     0.09 r
+  pe0/R[3] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[3]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[3]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: R[7] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[7] (in)                                0.00 @     0.00 r
+  U1/Y (DELLN1X2_HVT)                      0.09 @     0.09 r
+  pe0/R[7] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[7]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[7]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: R[4] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[4] (in)                                0.00 @     0.00 r
+  U8/Y (DELLN1X2_HVT)                      0.09 @     0.09 r
+  pe0/R[4] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[4]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[4]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: R[6] (input port clocked by ideal_clock1)
+  Endpoint: pe0/Rpipe_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  R[6] (in)                                0.00 @     0.00 r
+  U2/Y (DELLN1X2_HVT)                      0.09 @     0.09 r
+  pe0/R[6] (pe_0)                          0.00       0.09 r
+  pe0/Rpipe_reg[6]/D (DFFX1_HVT)           0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.07       0.07
+  pe0/Rpipe_reg[6]/CLK (DFFX1_HVT)         0.00       0.07 r
+  library hold time                        0.00       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: start (input port clocked by ideal_clock1)
+  Endpoint: c/count_reg[12]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  start (in)                               0.00 @     0.00 r
+  U13/Y (INVX0_HVT)                        0.02 @     0.02 f
+  U14/Y (INVX0_HVT)                        0.04 &     0.07 r
+  c/start (control)                        0.00       0.07 r
+  c/count_reg[12]/RSTB (DFFSSRX1_HVT)      0.00 &     0.07 r
+  data arrival time                                   0.07
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.06       0.06
+  c/count_reg[12]/CLK (DFFSSRX1_HVT)       0.00       0.06 r
+  library hold time                       -0.02       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: start (input port clocked by ideal_clock1)
+  Endpoint: c/count_reg[3]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  start (in)                               0.00 @     0.00 r
+  U13/Y (INVX0_HVT)                        0.02 @     0.02 f
+  U14/Y (INVX0_HVT)                        0.04 &     0.07 r
+  c/start (control)                        0.00       0.07 r
+  c/count_reg[3]/RSTB (DFFSSRX1_HVT)       0.00 &     0.07 r
+  data arrival time                                   0.07
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.06       0.06
+  c/count_reg[3]/CLK (DFFSSRX1_HVT)        0.00       0.06 r
+  library hold time                       -0.02       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: start (input port clocked by ideal_clock1)
+  Endpoint: c/count_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  start (in)                               0.00 @     0.00 r
+  U13/Y (INVX0_HVT)                        0.02 @     0.02 f
+  U14/Y (INVX0_HVT)                        0.04 &     0.07 r
+  c/start (control)                        0.00       0.07 r
+  c/count_reg[2]/RSTB (DFFSSRX1_HVT)       0.00 &     0.07 r
+  data arrival time                                   0.07
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.06       0.06
+  c/count_reg[2]/CLK (DFFSSRX1_HVT)        0.00       0.06 r
+  library hold time                       -0.02       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: start (input port clocked by ideal_clock1)
+  Endpoint: c/count_reg[1]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  start (in)                               0.00 @     0.00 r
+  U13/Y (INVX0_HVT)                        0.02 @     0.02 f
+  U14/Y (INVX0_HVT)                        0.04 &     0.07 r
+  c/start (control)                        0.00       0.07 r
+  c/count_reg[1]/RSTB (DFFSSRX1_HVT)       0.00 &     0.07 r
+  data arrival time                                   0.07
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.06       0.06
+  c/count_reg[1]/CLK (DFFSSRX1_HVT)        0.00       0.06 r
+  library hold time                       -0.02       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: start (input port clocked by ideal_clock1)
+  Endpoint: c/count_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  start (in)                               0.00 @     0.00 r
+  U13/Y (INVX0_HVT)                        0.02 @     0.02 f
+  U14/Y (INVX0_HVT)                        0.04 &     0.07 r
+  c/start (control)                        0.00       0.07 r
+  c/count_reg[0]/RSTB (DFFSSRX1_HVT)       0.00 &     0.07 r
+  data arrival time                                   0.07
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.06       0.06
+  c/count_reg[0]/CLK (DFFSSRX1_HVT)        0.00       0.06 r
+  library hold time                       -0.02       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: s1[0] (input port clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  s1[0] (in)                                              0.00 @     0.00 f
+  pe15/s1[0] (pe_1)                                       0.00       0.00 f
+  pe15/U34/Y (AO22X1_HVT)                                 0.03 @     0.03 f
+  pe15/sub_18/A[0] (pe_1_DW01_sub_0)                      0.00       0.03 f
+  pe15/sub_18/U10/Y (XNOR2X1_HVT)                         0.03 &     0.06 f
+  pe15/sub_18/DIFF[0] (pe_1_DW01_sub_0)                   0.00       0.06 f
+  pe15/U37/Y (AO22X1_HVT)                                 0.03 &     0.10 f
+  pe15/U33/Y (AO221X1_HVT)                                0.03 &     0.13 f
+  pe15/Accumulate_reg[0]/D (DFFX1_HVT)                    0.00 &     0.13 f
+  data arrival time                                                  0.13
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  pe15/Accumulate_reg[0]/CLK (DFFX1_HVT)                  0.00       0.08 r
+  library hold time                                       0.01       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: s1[0] (input port clocked by ideal_clock1)
+  Endpoint: pe1/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  s1[0] (in)                                              0.00 @     0.00 f
+  pe1/s1[0] (pe_15)                                       0.00       0.00 f
+  pe1/U35/Y (AO22X1_HVT)                                  0.04 @     0.04 f
+  pe1/sub_18/A[0] (pe_15_DW01_sub_0)                      0.00       0.04 f
+  pe1/sub_18/U10/Y (XNOR2X1_HVT)                          0.03 &     0.07 f
+  pe1/sub_18/DIFF[0] (pe_15_DW01_sub_0)                   0.00       0.07 f
+  pe1/U37/Y (AO22X1_HVT)                                  0.03 &     0.10 f
+  pe1/U33/Y (AO221X1_HVT)                                 0.03 &     0.14 f
+  pe1/Accumulate_reg[0]/D (DFFX1_HVT)                     0.00 &     0.14 f
+  data arrival time                                                  0.14
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  pe1/Accumulate_reg[0]/CLK (DFFX1_HVT)                   0.00       0.08 r
+  library hold time                                       0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: pe8/Rpipe_reg[5]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe9/Rpipe_reg[5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  pe8/Rpipe_reg[5]/CLK (DFFX1_HVT)         0.00       0.05 r
+  pe8/Rpipe_reg[5]/Q (DFFX1_HVT)           0.08       0.13 r
+  pe8/Rpipe[5] (pe_8)                      0.00       0.13 r
+  pe9/R[5] (pe_7)                          0.00       0.13 r
+  pe9/Rpipe_reg[5]/D (DFFX1_HVT)           0.00 &     0.13 r
+  data arrival time                                   0.13
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.08       0.08
+  pe9/Rpipe_reg[5]/CLK (DFFX1_HVT)         0.00       0.08 r
+  library hold time                        0.00       0.08
+  data required time                                  0.08
+  -----------------------------------------------------------
+  data required time                                  0.08
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+  Startpoint: s1[1] (input port clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[1]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  s1[1] (in)                                              0.00 @     0.00 f
+  pe15/s1[1] (pe_1)                                       0.00       0.00 f
+  pe15/U20/Y (AO22X1_HVT)                                 0.04 @     0.04 f
+  pe15/sub_18/A[1] (pe_1_DW01_sub_0)                      0.00       0.04 f
+  pe15/sub_18/U2_1/S (FADDX1_HVT)                         0.04 &     0.07 f
+  pe15/sub_18/DIFF[1] (pe_1_DW01_sub_0)                   0.00       0.07 f
+  pe15/U5/Y (AO22X1_HVT)                                  0.03 &     0.11 f
+  pe15/U32/Y (AO221X1_HVT)                                0.04 &     0.14 f
+  pe15/Accumulate_reg[1]/D (DFFX1_HVT)                    0.00 &     0.14 f
+  data arrival time                                                  0.14
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  pe15/Accumulate_reg[1]/CLK (DFFX1_HVT)                  0.00       0.08 r
+  library hold time                                       0.01       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: s1[3] (input port clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[3]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  s1[3] (in)                                              0.00 @     0.00 f
+  pe15/s1[3] (pe_1)                                       0.00       0.00 f
+  pe15/U22/Y (AO22X1_HVT)                                 0.03 @     0.03 f
+  pe15/sub_18/A[3] (pe_1_DW01_sub_0)                      0.00       0.03 f
+  pe15/sub_18/U2_3/S (FADDX1_HVT)                         0.04 &     0.07 f
+  pe15/sub_18/DIFF[3] (pe_1_DW01_sub_0)                   0.00       0.07 f
+  pe15/U10/Y (AO22X1_HVT)                                 0.04 &     0.11 f
+  pe15/U30/Y (AO221X1_HVT)                                0.03 &     0.14 f
+  pe15/Accumulate_reg[3]/D (DFFX1_HVT)                    0.00 &     0.14 f
+  data arrival time                                                  0.14
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  pe15/Accumulate_reg[3]/CLK (DFFX1_HVT)                  0.00       0.08 r
+  library hold time                                       0.01       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: s1[2] (input port clocked by ideal_clock1)
+  Endpoint: pe15/Accumulate_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  s1[2] (in)                                              0.00 @     0.00 f
+  pe15/s1[2] (pe_1)                                       0.00       0.00 f
+  pe15/U21/Y (AO22X1_HVT)                                 0.03 @     0.03 f
+  pe15/sub_18/A[2] (pe_1_DW01_sub_0)                      0.00       0.03 f
+  pe15/sub_18/U2_2/S (FADDX1_HVT)                         0.04 &     0.07 f
+  pe15/sub_18/DIFF[2] (pe_1_DW01_sub_0)                   0.00       0.07 f
+  pe15/U9/Y (AO22X1_HVT)                                  0.03 &     0.11 f
+  pe15/U31/Y (AO221X1_HVT)                                0.04 &     0.14 f
+  pe15/Accumulate_reg[2]/D (DFFX1_HVT)                    0.00 &     0.14 f
+  data arrival time                                                  0.14
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  pe15/Accumulate_reg[2]/CLK (DFFX1_HVT)                  0.00       0.08 r
+  library hold time                                       0.01       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: s1[2] (input port clocked by ideal_clock1)
+  Endpoint: pe2/Accumulate_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  s1[2] (in)                                              0.00 @     0.00 f
+  pe2/s1[2] (pe_14)                                       0.00       0.00 f
+  pe2/U21/Y (AO22X1_HVT)                                  0.04 @     0.04 f
+  pe2/sub_18/A[2] (pe_14_DW01_sub_0)                      0.00       0.04 f
+  pe2/sub_18/U2_2/S (FADDX1_HVT)                          0.04 &     0.08 f
+  pe2/sub_18/DIFF[2] (pe_14_DW01_sub_0)                   0.00       0.08 f
+  pe2/U5/Y (AO22X1_HVT)                                   0.03 &     0.11 f
+  pe2/U31/Y (AO221X1_HVT)                                 0.04 &     0.14 f
+  pe2/Accumulate_reg[2]/D (DFFX1_HVT)                     0.00 &     0.14 f
+  data arrival time                                                  0.14
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  pe2/Accumulate_reg[2]/CLK (DFFX1_HVT)                   0.00       0.08 r
+  library hold time                                       0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+1
