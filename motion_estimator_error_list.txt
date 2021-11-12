@@ -1,0 +1,83 @@
+
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP1_Full64 -- Thu Nov 11 18:00:31 2021
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'top_tb.v'
+Parsing design file 'topmodule.v'
+Top Level Modules:
+       timeunit
+       toplevel_testbench_op
+TimeScale is 1 ns / 10 ps
+
+Error-[URMI] Unresolved modules
+topmodule.v, 26
+"control c( .clock (clock),  .start (start),  .S1S2mux (s1s2mux[15:0]),  .NewDist (newDist[15:0]),  .CompStart (CompStart),  .PEready (PEready[3:0]),  .VectorX (VectorX[3:0]),  .VectorY (VectorY[3:0]),  .AddressR (AddressR[7:0]),  .AddressS1 (AddressS1[9:0]),  .AddressS2 (AddressS2[9:0]),  .pflag (pflag));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 28
+"Comparator comparator1( .clock (clock),  .CompStart (CompStart),  .PEout (peout[((8 * 16) - 1):0]),  .PEready (PEready[3:0]),  .vectorX (VectorX[3:0]),  .vectorY (VectorY[3:0]),  .BestDist (bestdist[7:0]),  .motionX (motionx[3:0]),  .motionY (motiony[3:0]),  .pflag (pflag));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 30
+"pe pe0( .clock (clock),  .R (R[7:0]),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[0]),  .newDist (newDist[0]),  .Accumulate (peout[7:0]),  .Rpipe (Rpipe0));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 31
+"pe pe1( .clock (clock),  .R (Rpipe0),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[1]),  .newDist (newDist[1]),  .Accumulate (peout[15:8]),  .Rpipe (Rpipe1));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 32
+"pe pe2( .clock (clock),  .R (Rpipe1),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[2]),  .newDist (newDist[2]),  .Accumulate (peout[23:16]),  .Rpipe (Rpipe2));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 33
+"pe pe3( .clock (clock),  .R (Rpipe2),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[3]),  .newDist (newDist[3]),  .Accumulate (peout[31:24]),  .Rpipe (Rpipe3));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 34
+"pe pe4( .clock (clock),  .R (Rpipe3),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[4]),  .newDist (newDist[4]),  .Accumulate (peout[39:32]),  .Rpipe (Rpipe4));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 35
+"pe pe5( .clock (clock),  .R (Rpipe4),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[5]),  .newDist (newDist[5]),  .Accumulate (peout[47:40]),  .Rpipe (Rpipe5));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 36
+"pe pe6( .clock (clock),  .R (Rpipe5),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[6]),  .newDist (newDist[6]),  .Accumulate (peout[55:48]),  .Rpipe (Rpipe6));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+topmodule.v, 37
+"pe pe7( .clock (clock),  .R (Rpipe6),  .s1 (s1[7:0]),  .s2 (s2[7:0]),  .s1s2mux (s1s2mux[7]),  .newDist (newDist[7]),  .Accumulate (peout[63:56]),  .Rpipe (Rpipe7));"
+  Module definition of above instance is not found in the design.
+
+
+Note-[MAX_ERROR_COUNT] Maximum error count reached
+  Current number of errors has reached the default maximum error count (10).
+  Please use +error+<count> to increase the limit.
+
+10 errors
+CPU time: .134 seconds to compile
